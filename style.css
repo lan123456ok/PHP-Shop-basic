@@ -1,0 +1,38 @@
+.icon_nho{
+	height: 30px;
+	width: 30px;
+	padding: 4px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+
+/*search box*/
+input[type="text"],input[type="text"]:focus{
+	border-radius: 100px;
+	outline: none;
+	border: none;
+	height: 32px;
+	width: 140px;
+	background-color: #f5f5f5;
+	padding: 2px 10px 2px 23px;
+	margin-right: 5px;
+}
+#search_box{
+	display: flex;
+	align-items: center;
+	border-radius: 100px;
+	border: 1px rgb(181, 181, 181,0.35) solid;
+	background-color: #f5f5f5;
+}
+.icon{
+	height: 26px;
+	width: 26px;
+	
+}
+.short-descript {
+	height: 40px;
+	line-height: 20px;
+	overflow:hidden;
+}
+
+
