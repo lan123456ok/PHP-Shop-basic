@@ -89,4 +89,5 @@
 
 	<script type="text/javascript">feather.replace()</script>
 </body>
+<?php mysqli_close($connect); ?>
 </html>

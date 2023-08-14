@@ -1,3 +1,35 @@
+#navbar{
+	position: fixed;
+	top: 23.75px;
+	width: 100%;
+	height: 70px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	z-index: 1000;
+	background-color: #fff;
+}
+nav.navbar {
+	box-shadow: none;
+}
+.slider {
+	margin-top: 70px;
+	border-bottom: 0.25px solid lightgray;
+}
+.user-menu > .row > div >div  > a, .user-menu > .row > div > div > div > a{
+	font-size: 11px;
+	font-weight: 700;
+	color: black;
+}
+.div-user-login,div.col-3.p-0{
+	margin-left: -17px;
+}
+#nike_logo:hover {
+	content: url('../assets/img/icons/nike_logo_fade.png');
+}
+.customer-general{
+	width: 100%;
+	height: 100%;
+}
 .icon_nho{
 	height: 30px;
 	width: 30px;
@@ -7,22 +39,23 @@
 }
 
 /*search box*/
-input[type="text"],input[type="text"]:focus{
-	border-radius: 100px;
+input[type="text"].search_input,input[type="text"].search_input:focus{
+	border-radius: 10px;
 	outline: none;
 	border: none;
-	height: 32px;
-	width: 140px;
+	height: 30px;
+	width: 100%;
 	background-color: #f5f5f5;
-	padding: 2px 10px 2px 23px;
+	padding: 2px 10px 2px 10px;
 	margin-right: 5px;
 }
 #search_box{
 	display: flex;
 	align-items: center;
-	border-radius: 100px;
+	border-radius: 50px;
 	border: 1px rgb(181, 181, 181,0.35) solid;
 	background-color: #f5f5f5;
+	height: 60%;
 }
 .icon{
 	height: 26px;
@@ -35,4 +68,255 @@ input[type="text"],input[type="text"]:focus{
 	overflow:hidden;
 }
 
+/*image product view*/
 
+.image_product{
+	display: flex;
+	width: 100vmin;
+	height: 100vmin;
+	float: left;
+}
+.image{
+	background-size: cover;
+	background-position: center;
+	border: 1px solid #ccc;
+}
+
+.left-column {
+	width: 20%;
+	height: 90%;
+	float: left;
+}
+
+.small-image {
+	width: 100%;
+	height: 25%;
+	margin-bottom: 3%;
+	cursor: pointer;
+	transition: all .2s linear;
+	background-size: cover;
+}
+.small-image:hover,.active{
+	border-color: #666;
+}
+
+.right-column {
+	width: 80%;
+	height: 100%;
+	padding: 0 1%;
+	float: left;
+}
+.image-preview {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	border: 1px solid #ccc;
+	cursor: zoom-in;
+	transition: all .1s linear;
+}
+.image-preview:hover{
+	background-size: 200vmin auto;
+}
+.info_product{
+	
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	
+	float: left;
+	position: absolute;
+	right: 45px;
+/*	background: pink;*/
+}
+.product_name{
+	font-size: 25px;
+}
+.product_price{
+	font: inherit;
+	color: rgb(17, 17, 17);
+	font-size: 18px;
+	
+}
+.description{
+	font-weight: 600;
+	font-size: 15px;
+}
+.size-option > .col-4{
+	padding: 0.1rem;
+}
+/*size-option*/
+legend > div > div{
+	font-size: 13px;
+}
+legend > div > div.col-4,.{
+	font-size: 13px;
+	font-weight: 700;
+}
+.size-option > .col-4 > input {
+	display: none;
+}
+.lab1{
+	display: block;
+	text-align: center;
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.size-option > .col-4 > input + div {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+.size-option > .col-4 > input + div label{
+	cursor: pointer;
+}
+.size-option > .col-4 > input:checked + div {
+	border: 2px solid black;
+}
+.button_user{
+	margin-top: 12px;
+	display: flex;
+	flex-direction: column;
+}
+.add_button{
+	height: 63px;
+	width: 367px;
+	background-color: black;
+	color: white;
+	border-radius: 100px;
+	cursor: pointer;
+}
+.add_button:hover{
+	background-color: #757575;
+	transition-duration: 0.5s;
+}
+.favor_button{
+	margin-top: 12px;
+	height: 63px;
+	width: 367px;
+	background-color: white;
+	color: black;
+	border: 1px #cccccc solid;
+	border-radius: 100px;
+	cursor: pointer;
+}
+.favor_button:hover{
+	border: 1px black solid;
+	transition-duration: 0.5s;
+}
+.product {
+	border-bottom: 0.0625rem solid lightgray;
+}
+
+/*Sign-up/Sign-in Membership*/
+.f1 {
+	font-size: 16px;
+	font-weight: 700;
+	color: black;
+}
+.div-signup {
+	margin-top: 70px;
+}
+.div-option > .col-6 > input {
+	display: none;
+}
+.div-option > .col-6 > .lab-sex {
+	display: block;
+}
+.div-option > .col-6 > input + div {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+}
+.div-option > .col-6 > input + div label{
+	cursor: pointer;
+}
+.div-option > .col-6 > input:checked + div {
+	border: 2px solid black;
+}
+.form-signup > .form-control{
+	position: relative;
+	font-size: 16px;
+	height: auto;
+	padding: 10px;
+} 
+.form-signup > .form-control, .form-signup > select , .form-signup > .div-option, .form-signup > .date-option, #signIn > input, #signIn > div{
+	margin-top: 10px;
+}
+.lab-sex {
+	display: block;
+	text-align: center;
+}
+span.text-danger {
+	font-size: 12px;
+}
+.form-unhidden {
+	display: block;
+}
+.form-hidden {
+	display: none;
+}
+
+.product-cart {
+	border-bottom: 1px solid lightgray;
+}
+.btn-quantity-update{
+	height: 13px;
+	width: 13px;
+	border : 0 none transparent;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 2px;
+	text-align : center;
+}
+.btn-cart-below{
+	border : 0 none transparent;
+	background: white;
+}
+.btn-quantity:hover, .btn-cart-below:hover {
+	cursor: pointer;
+}
+.button_checkout{
+	
+	margin-top: 15px;
+	height: 63px;
+	width: 367px;
+	background-color: black;
+	color: white;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+div.fileinput{
+	margin-top: -140px;
+	position: relative;
+	z-index: 3;
+}
+form dl {
+	margin: 0;
+	width: 100%;
+}
+form dl dt, form dl dd {
+	float: left;
+	margin:	0;
+
+}
+form dl dt{
+	background-color: lightgray;
+	height: 100%;
+	width: 30%;
+}
+form dl dd{
+	width: 70%;
+}
+form dl dt div label {
+	padding: 10px 4px 0 0;
+}
+input.email-customer-now{
+	float: left;
+	width: 86%;
+}
+.button.blue {
+    border: 1px solid #0d717e;
+    background: #28a0b2;
+    float: left;
+    padding: 8px;
+}

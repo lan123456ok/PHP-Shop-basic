@@ -35,21 +35,21 @@
 						<label for="name" class="form-label">
 							Tên hãng:
 						</label>
-						<input type="text" name="name" class="form-control w-25" placeholder="Nhập tên hãng..." value="<?php echo $each['name']; ?>">
+						<input type="text" name="name" class="form-control w-25" value="<?php echo $each['name']; ?>">
 					</div>
 
 					<div class="col-xs-2 mt-2">
 						<label for="address" class="form-label">
 							Địa chỉ:
 						</label>
-						<textarea class="form-control w-25" name="address" placeholder="Nhập địa chỉ..."><?php echo $each['address']; ?></textarea>
+						<textarea class="form-control w-25" name="address"><?php echo $each['address']; ?></textarea>
 					</div>
 
 					<div class="col-xs-2 mt-2">
 						<label for="photo" class="form-label">
 							Logo hãng:
 						</label>
-						<input type="text" name="photo" class="form-control w-25" placeholder="Nhập link.." value="<?php echo $each['photo']; ?>">
+						<input type="text" name="photo" class="form-control w-25" value="<?php echo $each['photo']; ?>">
 					</div>
 
 					<div class="mt-2">
@@ -63,4 +63,5 @@
 
 	<script type="text/javascript">feather.replace()</script>
 </body>
+<?php mysqli_close($connect); ?>
 </html>
